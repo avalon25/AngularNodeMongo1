@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Angular, Node and MongoDB App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="scripts/app.js"></script>
+</head>
+<body ng-app="AngNodMong" ng-controller="tkcontroller">
+	<div>
+		<div>Number of available guesses: {{guesses}}</div>
+		<div>Your selected word: {{displayWord}}</div>
+		<div>
+			<input type="text" name="guess" ng-model="input.letter">
+			<button ng-click="letterChosen()">Submit</button>
+		</div>
+		
+	</div>
+</body>
+</html>
